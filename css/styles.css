@@ -10122,8 +10122,8 @@ header.masthead h1 {
   bottom: 0;
   text-align: center;
   opacity: 0;
-  color: #962121;
-  background: #96212154;
+  color: #962121d0;
+  background: #9621217c;
   transition: opacity 0.25s ease;
   text-align: center;
 }
