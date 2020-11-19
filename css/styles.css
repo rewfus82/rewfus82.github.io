@@ -9854,6 +9854,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.text-red-75 {
+  color: rgba(255, 0, 0, 0.699) !important;
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -10123,7 +10127,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #962121d0;
-  background: #9621217c;
+  background: #962121a9;
   transition: opacity 0.25s ease;
   text-align: center;
 }
