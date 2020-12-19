@@ -1,0 +1,122 @@
+Name,Price,Atype,Quality
+Fireball, 15.00 ,Whiskey,Budget
+Jameson, 22.00 ,Whiskey,Standard
+Jack Daniel's, 22.00 ,Whiskey,Standard
+Blanton's, 55.00 ,Whiskey,Premium
+Crown Royal, 30.00 ,Whiskey,Standard
+Virginia Black, 33.00 ,Whiskey,Standard
+Johnny Walker, 23.00 ,Whiskey,Standard
+Buchanan's, 30.00 ,Whiskey,Standard
+Macallan, 45.00 ,Whiskey,Premium
+Pendleton, 22.00 ,Whiskey,Standard
+Jim Beam, 13.00 ,Whiskey,Budget
+Bird Dog , 16.00 ,Whiskey,Budget
+Black Velvet, 8.00 ,Whiskey,Budget
+Makers Mark, 24.00 ,Whiskey,Standard
+Wild Turkey, 20.00 ,Whiskey,Standard
+Kavalan, 96.00 ,Whiskey,Premium
+Bulleit, 25.00 ,Whiskey,Standard
+Mellow Corn, 12.00 ,Whiskey,Budget
+Evan Williams, 17.00 ,Whiskey,Budget
+Old Crow, 12.00 ,Whiskey,Budget
+Canadian Club, 19.00 ,Whiskey,Budget
+Suntory Hibiki 21 Year, 970.00 ,Whiskey,Extreme
+Kigai, 650.00 ,Whiskey,Extreme
+Hibiki Blender's Choice, 250.00 ,Whiskey,Extreme
+Rare Perfection 15 Year, 185.00 ,Whiskey,Extreme
+Negroni, 78.00 ,Whiskey,Premium
+Absolut, 19.00 ,Vodka,Budget
+Tito's, 20.00 ,Vodka,Standard
+Grey Goose, 35.00 ,Vodka,Premium
+Smirnoff, 13.00 ,Vodka,Budget
+Skyy, 13.00 ,Vodka,Budget
+Crystal Head, 48.00 ,Vodka,Premium
+Ciroc, 27.00 ,Vodka,Standard
+New Amsterdam, 12.00 ,Vodka,Budget
+Ketel One, 23.00 ,Vodka,Standard
+Svedka, 12.00 ,Vodka,Budget
+Belvedere, 34.00 ,Vodka,Premium
+Effen, 24.00 ,Vodka,Standard
+Pinnacle, 11.00 ,Vodka,Budget
+Burnett's, 7.00 ,Vodka,Budget
+Stoli, 19.00 ,Vodka,Budget
+UV, 19.00 ,Vodka,Budget
+Chopin, 28.00 ,Vodka,Standard
+GTV, 29.00 ,Vodka,Standard
+Kinky, 19.00 ,Vodka,Budget
+Popov, 8.00 ,Vodka,Budget
+Three Olive, 13.00 ,Vodka,Budget
+Trump, 740.00 ,Vodka,Extreme
+Reyka, 20.00 ,Vodka,Standard
+Sobieski, 11.00 ,Vodka,Budget
+Royal Elite, 19.00 ,Vodka,Budget
+Beluga, 35.00 ,Vodka,Premium
+Deep Eddy, 13.00 ,Vodka,Budget
+Viniq, 21.00 ,Vodka,Standard
+Skol, 7.00 ,Vodka,Budget
+Saint Louis Crystal, 670.00 ,Vodka,Extreme
+Jewel of Russia Ultra, 120.00 ,Vodka,Premium
+Snow Queen, 40.00 ,Vodka,Premium
+Crystal Head , 120.00 ,Vodka,Premium
+Cold River, 40.00 ,Vodka,Premium
+Hendrick's, 25.00 ,Gin,Standard
+?Tanqueray, 22.00 ,Gin,Standard
+?Beefeater, 18.00 ,Gin,Budget
+?Bombay, 22.00 ,Gin,Standard
+?Seagram's, 12.00 ,Gin,Budget
+?New Amsterdam, 11.00 ,Gin,Budget
+?Plymouth, 30.00 ,Gin,Standard
+?Gordon's, 13.00 ,Gin,Budget
+Piger Henricus , 45.00 ,Gin,Premium
+Boodles , 21.00 ,Gin,Standard
+Monkey 47 , 69.00 ,Gin,Premium
+The Botanist , 40.00 ,Gin,Premium
+Bulldog , 25.00 ,Gin,Standard
+Nolet's , 44.00 ,Gin,Premium
+Bluecoat , 30.00 ,Gin,Standard
+Aviation , 30.00 ,Gin,Standard
+Monkey 47 Distiller's Cut, 95.00 ,Gin,Premium
+Nolet's Dry Reserve, 900.00 ,Gin,Extreme
+Ki No Bi Kyoto Navy Strength, 75.00 ,Gin,Premium
+Kyoto House Gin, 200.00 ,Gin,Extreme
+Cambridge Distillery Anty Gin, 290.00 ,Gin,Extreme
+Spring Gin Gentleman's Cut, 101.00 ,Gin,Extreme
+Burnett's, 8.00 ,Gin,Budget
+Booth's Dry, 8.00 ,Gin,Budget
+Malibu, 20.00 ,Rum,Standard
+Kraken, 19.00 ,Rum,Standard
+Bacardi, 15.00 ,Rum,Budget 
+Captain Morgan, 18.00 ,Rum,Budget 
+Sailors Jerry, 20.00 ,Rum,Standard
+?Havana Club, 22.00 ,Rum,Standard
+Mount Gay, 23.00 ,Rum,Standard
+Cruzan, 12.00 ,Rum,Budget 
+Pyrat, 25.00 ,Rum,Standard
+Rumchata, 20.00 ,Rum,Standard
+Don Q, 12.00 ,Rum,Budget
+Bumbu, 35.00 ,Rum,Premium 
+Zacapa, 38.00 ,Rum,Premium
+Myers, 23.00 ,Rum,Standard
+Appleton, 30.00 ,Rum,Premium
+Zaya, 30.00 ,Rum,Premium
+Blue Chair Bay, 17.00 ,Rum,Budget
+Brugal, 29.00 ,Rum,Standard
+Admiral Nelson, 11.00 ,Rum,Budget
+Bayou, 20.00 ,Rum,Standard
+Patron, 33.00 ,Tequila,Premium
+Casamigos, 31.00 ,Tequila,Premium
+1800, 27.00 ,Tequila,Standard
+Don Julio, 39.00 ,Tequila,Premium
+Avion, 39.00 ,Tequila,Premium
+Rose, 17.00 ,Tequila,Budget
+Milagro, 25.00 ,Tequila,Standard
+Sauza , 19.00 ,Tequila,Budget
+Jose Cuervo, 22.00 ,Tequila,Standard
+Deleon, 38.00 ,Tequila,Premium
+Hornitos, 17.00 ,Tequila,Budget
+Herradura , 27.00 ,Tequila,Standard
+Cabo Wabo , 27.00 ,Tequila,Standard
+Corralejo , 26.00 ,Tequila,Standard
+El Jimador , 17.00 ,Tequila,Budget
+Cazadores , 22.00 ,Tequila,Standard
+Number Juan , 24.00 ,Tequila,Standard
