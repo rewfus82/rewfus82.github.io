@@ -10,30 +10,24 @@ public class BasketModel {
     public void add(MenuItemModel arg) {
         this.basket.add(arg);
     }
-
     public void add(DrinkModel arg) {
         this.basket.add(arg);
     }
-
     public void add(FoodModel arg) {
         this.basket.add(arg);
     }
-
     public void remove(int arg) {
         this.basket.remove(arg);
     }
-
     public double getTotal() {
         basket.forEach(item -> {
             total += item.price;
         });
         return this.total;
     }
-
     public int getCount() {
         return basket.size();
     }
-
     public String summary() {
         this.summary = "";
         basket.forEach(item -> {
