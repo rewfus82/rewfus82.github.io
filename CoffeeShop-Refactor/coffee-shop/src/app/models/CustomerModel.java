@@ -1,11 +1,7 @@
 package app.models;
-
 import app.models.EnumBody.*;
 import app.services.*;
-
-
 public class CustomerModel {
-
     private String customerId = new IDGenerator().generate();
     private String firstName;
     private String lastName;
@@ -14,15 +10,8 @@ public class CustomerModel {
     private String streetAddress;
     private PointsModel points = new PointsModel();
     private HistoryModel history = new HistoryModel();
-
-    public CustomerModel() {
-    }
-
-    public CustomerModel(String lastName, String firstName) {
-        this.lastName = lastName;
-        this.firstName = firstName;
-    }
-
+    public CustomerModel(){}
+    public CustomerModel(String lastName, String firstName) {this.lastName = lastName; this.firstName = firstName;}
 //set
     public void set(CustomerField customerField, String arg) {
         switch (customerField) {
@@ -47,14 +36,8 @@ public class CustomerModel {
         }
     }
 
-    public void setPoints(PointsModel points) {
-        this.points = points;
-    }
-
-    public void setHistory(HistoryModel history) {
-        this.history = history;
-    }
-    
+    public void setPoints(PointsModel points) {this.points = points;}
+    public void setHistory(HistoryModel history) {this.history = history;}
 //get
     public String get(CustomerField customer) {
         switch (customer) {
@@ -74,14 +57,8 @@ public class CustomerModel {
                 return null;
         }
     }
-
-    public PointsModel getPoints(){
-        return this.points;
-    }
-
-    public HistoryModel getHistory() {
-        return this.history;
-    }
+    public PointsModel getPoints() {return this.points;}
+    public HistoryModel getHistory() {return this.history;}
 
 
 
