@@ -1,220 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portfolio - Ryan McLaughlin</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Save me, I'm Lost!</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work">Work</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ryan McLaughlin — AI &amp; Software Engineer</title>
+    <meta
+      name="description"
+      content="Ryan McLaughlin — Software Engineer building production AI systems: multi-agent orchestration with LangGraph, custom MCP servers, and human-in-the-loop workflows."
+    />
+    <meta name="author" content="Ryan McLaughlin" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ryan McLaughlin — AI &amp; Software Engineer" />
+    <meta
+      property="og:description"
+      content="Production AI engineering: multi-agent LangGraph systems, custom MCP servers, and human-in-the-loop workflows."
+    />
+    <meta property="og:url" content="https://rewfus82.github.io/" />
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body id="top">
+    <!-- ===== Navigation ===== -->
+    <header class="nav" id="nav">
+      <div class="nav__inner container">
+        <a class="nav__brand" href="#top">
+          <span class="nav__brand-mark">RM</span>
+          <span class="nav__brand-text">Ryan McLaughlin</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav__links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a class="nav__cta" href="https://github.com/rewfus82" target="_blank" rel="noopener">
+            GitHub ↗
+          </a>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end">
-                        <h3 class="text-white font-weight-bold">Semi-professional, Personally Constructed, Made with Love....</h3>
-                         <h1 class="text-white font-weight-bold">Portfolio for Ryan McLaughlin</h1>
-                         <hr class="divider my-4" />
-                         <img src="assets/img/portfolio/headshot.jpg" alt="headshot.jpg"></img>
-                         <hr class="divider my-4" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-style-italic font-weight-light mb-5">...aspiring developer/analyst/celebrity chef/superhero</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="assets/resume/2022 Resume Ryan McLaughlin">Click for My Resume</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">About me!</h2>
-                        <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">I am a 2020 graduate of Iowa State University, Ivy School of Business where I received a BS in Management Information Systems with an emphasis on management and object-oriented languages. </p>
-                        <p class="text-white-50 mb-4">I am just finishing my first two years as a software developer and I have learned an incredible amount during this challenging time. I look forward to increasing my knowledge and building relationships in this exciting industry.</p>
-                        <p class="text-white-50 mb-4">I also enjoy cooking and have professional experience as a sous chef. Before deciding to attend college in 2016, I previously worked in retail management and professional recruiting. </p>
-                        <p class="text-white-50 mb-4">I am looking for a position in technology that will challenge me and take advantage of my unique skillset.  </p>
-                        <hr class="divider light my-4" />
-                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#work">Check out some of my work!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Work-->
-        <section class="page-section" id="work">
-            <div class="container">
-                <h2 class="text-center mt-0">Academic/Personal Work</h2>
-                <hr class="divider my-4" />
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Methodologies</h3>
-                            <p class="text-muted mb-0">Agile, CI/CD, SaaS, DBS and more</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Languages</h3>
-                            <p class="text-muted mb-0">Java, TypeScript, Angular, HTML, CSS </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Software/OS</h3>
-                            <p class="text-muted mb-0">Photoshop, Paint.net, Publisher, Eclipse, Visual Studio, Microsoft Suite, Spring, Git, Jupyter, Flask, Windows, iOS, Android, MacOS </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Passions</h3>
-                            <p class="text-muted mb-0">Cooking, Computing, Movies, LEDs, Gaming, Family, Travel and more!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Photoshop</div>
-                                <div class="project-name text-red-75">Bird on a Lake</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Java</div>
-                                <div class="project-name text-red-75">Coffee Shop Back-End</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Photoshop</div>
-                                <div class="project-name text-red-75">Classic Photo Retouch</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Arduino</div>
-                                <div class="project-name text-red-75">Dynamic Ambient LED System</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Map Design</div>
-                                <div class="project-name text-red-75">Far Cry Map Jam Competition</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Python & SQL</div>
-                                <div class="project-name text-red-75">Booze Finder Promotional App</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <img
+          class="hero__avatar reveal"
+          src="assets/img/portfolio/headshot.jpg"
+          alt="Ryan McLaughlin"
+          width="220"
+          height="220"
+        />
+        <p class="hero__eyebrow reveal">Software Engineer · AI Systems</p>
+        <h1 class="hero__title reveal">
+          I build <span class="grad">production AI systems</span> that
+          orchestrate, reason, and ship.
+        </h1>
+        <p class="hero__lede reveal">
+          Full-stack engineer with 5 years across Java, TypeScript, and Python —
+          now focused on multi-agent orchestration with LangGraph, custom MCP
+          servers, and human-in-the-loop workflows backed by real observability.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="assets/resume/Ryan-McLaughlin-Resume.pdf">Résumé</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
         </div>
-        <!-- Links-->
-        <section class="page-section bg-dark text-white">
-            <div class="container text-center">
-                <h2 class="mb-4">Links</h2>
-                <hr class="divider my-4" />
-                <a class="btn btn-light btn-xl" href="https://github.com/rewfus82/rewfus82.github.io" target="_blank">Coffe Shop App</a>
-                <a class="btn btn-light btn-xl" href="https://github.com/rewfus82/rewfus82.github.io/tree/master/TimeClockApp" target="_blank">Time Clock App</a>
-                <a class="btn btn-light btn-xl" href="https://github.com/rewfus82/rewfus82.github.io/tree/master/assets/Booze%20Finder/mis407f20-team-4-main" target="_blank">Booze Finder</a>
-                <a class="btn btn-light btn-xl" href="https://maps.farcry.info/?creator=Rewfus82" target="_blank">Far Cry Map Jam</a>
-                <a class="btn btn-light btn-xl" href="https://www.youtube.com/playlist?list=PLbFzxpBP58yvYwiMJUTcv4yAIbxPpHT6q" target="_blank">Dynamic LEDs</a>
+        <ul class="hero__chips reveal" aria-label="Core technologies">
+          <li>LangGraph</li>
+          <li>MCP</li>
+          <li>LangSmith</li>
+          <li>FastAPI</li>
+          <li>React</li>
+          <li>Spring Boot</li>
+          <li>Kubernetes</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__body reveal">
+            <p>
+              I'm a software engineer based in Iowa, currently a Software
+              Engineer at <strong>Paychex</strong>, where I build production
+              AI infrastructure for the enterprise. Most of my recent work lives
+              at the intersection of classic backend engineering and applied
+              LLM systems — turning agent prototypes into reliable, observable
+              services.
+            </p>
+            <p>
+              I came to software the long way around: roughly fifteen years in
+              management, recruiting, and operations before earning a BS in
+              Management Information Systems from Iowa State and going full-time
+              into engineering. That background shows up in how I work — I care
+              about the people on the other side of the software, I communicate
+              clearly, and I'm comfortable owning ambiguity end to end.
+            </p>
+            <p>
+              These days I'm deliberately deep in the AI stack: multi-agent
+              graphs, the Model Context Protocol, retrieval, and
+              human-in-the-loop design — building systems I can explain line by
+              line, not black boxes.
+            </p>
+          </div>
+
+          <aside class="about__card reveal">
+            <h3 class="about__card-title">At a glance</h3>
+            <dl class="about__facts">
+              <div><dt>Role</dt><dd>Software Engineer @ Paychex</dd></div>
+              <div><dt>Focus</dt><dd>Multi-agent AI &amp; MCP</dd></div>
+              <div><dt>Experience</dt><dd>5 yrs full-stack · 4 mo production LLM</dd></div>
+              <div><dt>Based in</dt><dd>Iowa · open to remote</dd></div>
+              <div><dt>Education</dt><dd>BS, MIS — Iowa State University</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">02</span>
+          <h2 class="section__title">Skills</h2>
+        </div>
+
+        <div class="skills">
+          <article class="skill-card reveal">
+            <h3>AI Engineering</h3>
+            <ul>
+              <li>LangGraph (multi-agent orchestration)</li>
+              <li>LangChain</li>
+              <li>Model Context Protocol (custom MCP servers)</li>
+              <li>Human-in-the-loop workflow design</li>
+              <li>LangSmith — tracing &amp; observability</li>
+              <li>RAG &amp; structured LLM output</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Languages</h3>
+            <ul>
+              <li>Java</li>
+              <li>TypeScript / JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML &amp; CSS</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Frameworks &amp; Backend</h3>
+            <ul>
+              <li>Spring Boot</li>
+              <li>FastAPI</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Data &amp; Infrastructure</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>Kafka</li>
+              <li>Kubernetes</li>
+              <li>Docker</li>
+              <li>SQLite / PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Practices</h3>
+            <ul>
+              <li>Agile / CI-CD</li>
+              <li>Test-driven development</li>
+              <li>Git &amp; trunk-based workflows</li>
+              <li>On-call / production ownership</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Projects</h2>
+        </div>
+
+        <!-- Flagship -->
+        <article class="project project--flagship reveal">
+          <div class="project__meta">
+            <span class="badge badge--accent">Flagship · Open source</span>
+            <h3 class="project__title">Mise-en-Place</h3>
+            <p class="project__tagline">
+              A multi-agent meal-planning system for athletes — built to show
+              what production-grade agent orchestration actually looks like.
+            </p>
+            <p class="project__desc">
+              A LangGraph graph coordinates specialized agents to plan a full
+              week of macro-targeted meals, then pauses for a
+              <strong>human-in-the-loop review</strong> before anything is saved.
+              Custom <strong>MCP servers</strong> expose the user's pantry and
+              grocery state to the model; per-day generation runs in parallel
+              (7-day plans dropped from ~70s to ~33s). Every run is traced in
+              <strong>LangSmith</strong>. React + FastAPI front the whole thing,
+              with measured-TDEE analytics derived from real weight logs.
+            </p>
+            <ul class="project__tags">
+              <li>LangGraph</li>
+              <li>MCP</li>
+              <li>LangSmith</li>
+              <li>FastAPI</li>
+              <li>React + TS</li>
+              <li>SQLite</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn btn--primary btn--sm" href="https://github.com/rewfus82/mise-en-place" target="_blank" rel="noopener">
+                Source on GitHub ↗
+              </a>
             </div>
-        </section>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
-                        <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Please feel free to contact me via email or phone call. I look forward to hearing from you!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>+1 (712) 730-3020</div>
-                    </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                        <a class="d-block" href="mailto:rcmc82@gmail.com">rcmc82@gmail.com</a>
-                    </div>
-                </div>
+          </div>
+
+          <div class="project__highlights">
+            <h4>Architecture highlights</h4>
+            <ul>
+              <li><span>◆</span> Multi-agent LangGraph orchestration with a stateful checkpointed graph</li>
+              <li><span>◆</span> Custom MCP servers for pantry depletion &amp; grocery pricing</li>
+              <li><span>◆</span> Human-in-the-loop interrupt: review &amp; revise before commit</li>
+              <li><span>◆</span> Parallel per-day generation for ~2× faster plans</li>
+              <li><span>◆</span> LangSmith tracing wired in from day one</li>
+              <li><span>◆</span> 87 backend + 11 frontend tests</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Secondary grid -->
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span class="badge">Professional · Private</span>
+            <h3>Service Concierge</h3>
+            <p>
+              Internal enterprise AI platform at Paychex connecting enterprise
+              data sources to LLM pipelines through custom MCP servers and
+              multi-agent orchestration, with LangSmith observability and
+              human-in-the-loop checkpoints. Proprietary — happy to discuss the
+              architecture in conversation.
+            </p>
+            <ul class="project__tags">
+              <li>LangGraph</li>
+              <li>LangChain</li>
+              <li>MCP</li>
+              <li>Enterprise</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="badge">Earlier work</span>
+            <h3>Foundations</h3>
+            <p>
+              A trail of pre-AI builds — a Java loyalty/POS back-end, a
+              Java/Swing time-clock app, and a Python + SQL retail price finder.
+              Useful for tracing how I got here.
+            </p>
+            <div class="project__links">
+              <a class="link" href="https://github.com/rewfus82?tab=repositories" target="_blank" rel="noopener">
+                Browse repos ↗
+              </a>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Updated 11/2020 -- Ryan McLaughlin, Courtesy of Bootstrap</div></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">04</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__when">2022 — Present</div>
+            <div class="timeline__body">
+              <h3>Software Engineer <span>· Paychex</span></h3>
+              <p>
+                Build production AI infrastructure — the "Service Concierge"
+                platform — connecting enterprise data to LLM pipelines via
+                custom MCP servers and multi-agent LangGraph orchestration, with
+                LangSmith observability and human-in-the-loop design.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__when">2022</div>
+            <div class="timeline__body">
+              <h3>Software Developer <span>· Centene (contract)</span></h3>
+              <p>
+                Intranet web services and back-end database support for internal
+                business partners — Angular/TypeScript front ends over MongoDB
+                and SharePoint, Karma/Protractor testing, Node.js, Agile CI/CD.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__when">2021 — 2022</div>
+            <div class="timeline__body">
+              <h3>Software Developer <span>· Berkley Technology Services</span></h3>
+              <p>
+                Full-stack engineer on a billing-services platform supporting 50+
+                divisions — Java back end, Angular/HTML/CSS front end, rotating
+                24-hour on-call production support.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__when">2021</div>
+            <div class="timeline__body">
+              <h3>Software Developer <span>· The Palmer Group (contract)</span></h3>
+              <p>
+                Front-end development for a smart-home-services client —
+                TypeScript/Angular, paired programming and TDD, MVC, Agile.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--muted reveal">
+            <div class="timeline__when">Prior</div>
+            <div class="timeline__body">
+              <h3>~15 years in management, recruiting &amp; operations</h3>
+              <p>
+                Retail and store management, IT/financial-services recruiting,
+                and business-transition consulting before pivoting into
+                software — where the soft skills still pay off daily.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">05</span>
+          <h2 class="section__title">Contact</h2>
+        </div>
+
+        <div class="contact reveal">
+          <p class="contact__lede">
+            I'm open to senior AI and software engineering roles. The fastest way
+            to reach me is email.
+          </p>
+          <div class="contact__links">
+            <a class="contact__link" href="mailto:rcmc82@gmail.com">
+              <span class="contact__icon">✉</span>
+              <span>rcmc82@gmail.com</span>
+            </a>
+            <a class="contact__link" href="https://github.com/rewfus82" target="_blank" rel="noopener">
+              <span class="contact__icon">⌥</span>
+              <span>github.com/rewfus82</span>
+            </a>
+            <a class="contact__link" href="https://www.linkedin.com/in/ryan-mclaughlin-b47388166/" target="_blank" rel="noopener">
+              <span class="contact__icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Ryan McLaughlin</span>
+        <span>Built from scratch — HTML, CSS &amp; vanilla JS.</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
- 
