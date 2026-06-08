@@ -6,6 +6,29 @@
 (() => {
   "use strict";
 
+  /* ---- Rotating hero tagline (random on each load) ---- */
+  const HERO_LINES = [
+    `Building production <span class="grad">multi-agent AI systems</span>.`,
+    `Multi-agent orchestration, custom MCP servers, and the <span class="grad">infrastructure underneath</span>.`,
+    `From <span class="grad">Kafka to LangGraph</span>, I work the whole stack.`,
+    `Full-stack engineer, <span class="grad">AI-systems focus</span>.`,
+    `I make LLMs do <span class="grad">useful, repeatable work</span>.`,
+    `Fifteen years solving people problems — now I <span class="grad">solve them with AI</span>.`,
+    `Career-changer turned <span class="grad">AI systems engineer</span>.`,
+    `Backend engineer with a serious <span class="grad">AI habit</span>.`,
+    `I build <span class="grad">AI you can actually click</span> — try the demo below.`,
+    `Turning caffeine into <span class="grad">multi-agent AI systems</span>.`,
+    `My agents run with a <span class="grad">human-in-the-loop</span>, because I don't fully trust them either.`,
+    `Recovering recruiter — now I just <span class="grad">interview AI agents</span>.`,
+    `I read the <span class="grad">LangGraph docs</span> so you don't have to.`,
+    `I get LLMs to <span class="grad">stop making things up</span>. (Results may vary.)`,
+    `Yes, I built an <span class="grad">entire app to plan my dinners</span>. Worth it.`,
+  ];
+  const heroTitle = document.getElementById("heroTitle");
+  if (heroTitle) {
+    heroTitle.innerHTML = HERO_LINES[Math.floor(Math.random() * HERO_LINES.length)];
+  }
+
   const nav = document.getElementById("nav");
   const toggle = document.getElementById("navToggle");
   const links = document.getElementById("navLinks");
