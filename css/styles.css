@@ -433,6 +433,11 @@ strong { color: var(--text); font-weight: 600; }
   border-radius: 6px;
 }
 .project__links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.project__note {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  color: var(--text-mute);
+}
 .project__highlights {
   background: var(--bg);
   border: 1px solid var(--border);
