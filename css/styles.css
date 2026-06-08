@@ -250,6 +250,11 @@ strong { color: var(--text); font-weight: 600; }
   font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
+  min-height: 1.15em; /* reduce reflow as rotating lines change length */
+}
+.hero__line {
+  display: inline-block;
+  will-change: opacity, transform;
 }
 .hero__lede {
   font-size: clamp(1.05rem, 2.2vw, 1.3rem);

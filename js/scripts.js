@@ -8,25 +8,49 @@
 
   /* ---- Rotating hero tagline (random on each load) ---- */
   const HERO_LINES = [
-    `Building production <span class="grad">multi-agent AI systems</span>.`,
-    `Multi-agent orchestration, custom MCP servers, and the <span class="grad">infrastructure underneath</span>.`,
-    `From <span class="grad">Kafka to LangGraph</span>, I work the whole stack.`,
-    `Full-stack engineer, <span class="grad">AI-systems focus</span>.`,
-    `I make LLMs do <span class="grad">useful, repeatable work</span>.`,
-    `Fifteen years solving people problems — now I <span class="grad">solve them with AI</span>.`,
-    `Career-changer turned <span class="grad">AI systems engineer</span>.`,
-    `Backend engineer with a serious <span class="grad">AI habit</span>.`,
-    `I build <span class="grad">AI you can actually click</span> — try the demo below.`,
-    `Turning caffeine into <span class="grad">multi-agent AI systems</span>.`,
-    `My agents run with a <span class="grad">human-in-the-loop</span>, because I don't fully trust them either.`,
+    `Sous-chef turned software engineer — still all about <span class="grad">mise en place</span>.`,
+    `Former Games Workshop manager — I've been <span class="grad">orchestrating armies</span> for years.`,
     `Recovering recruiter — now I just <span class="grad">interview AI agents</span>.`,
+    `Equally opinionated about <span class="grad">films and frameworks</span>.`,
+    `Traded the chef's knife for a <span class="grad">keyboard</span> (fewer burns).`,
+    `Building cutting-edge AI from <span class="grad">cornfield-adjacent Iowa</span>.`,
+    `Once made my walls change color with an Arduino. <span class="grad">Standards have evolved.</span>`,
+    `Best bugs get fixed on a <span class="grad">trail, no laptop in sight</span>.`,
+    `Fifteen years reading résumés — now I write code that <span class="grad">reads everything else</span>.`,
+    `My agents run with a <span class="grad">human-in-the-loop</span> because I don't fully trust them either.`,
+    `Turning caffeine into <span class="grad">multi-agent AI systems</span>.`,
+    `Yes, I named the project after a <span class="grad">cooking term</span>. Obviously.`,
     `I read the <span class="grad">LangGraph docs</span> so you don't have to.`,
+    `Built a <span class="grad">Far Cry map</span> once. Multi-agent systems now. Same energy.`,
     `I get LLMs to <span class="grad">stop making things up</span>. (Results may vary.)`,
-    `Yes, I built an <span class="grad">entire app to plan my dinners</span>. Worth it.`,
   ];
-  const heroTitle = document.getElementById("heroTitle");
-  if (heroTitle) {
-    heroTitle.innerHTML = HERO_LINES[Math.floor(Math.random() * HERO_LINES.length)];
+  const heroLine = document.getElementById("heroLine");
+  if (heroLine) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let idx = Math.floor(Math.random() * HERO_LINES.length);
+    heroLine.innerHTML = HERO_LINES[idx];
+
+    if (!reduceMotion && typeof heroLine.animate === "function") {
+      const OUT = [
+        { opacity: 1, transform: "translateX(0)" },
+        { opacity: 0, transform: "translateX(28px)" },
+      ];
+      const IN = [
+        { opacity: 0, transform: "translateX(-28px)" },
+        { opacity: 1, transform: "translateX(0)" },
+      ];
+      setInterval(() => {
+        if (document.hidden) return; // don't churn in a background tab
+        const out = heroLine.animate(OUT, { duration: 260, easing: "cubic-bezier(.4,0,1,1)" });
+        out.onfinish = () => {
+          heroLine.style.opacity = "0"; // hold hidden through the swap
+          idx = (idx + 1) % HERO_LINES.length;
+          heroLine.innerHTML = HERO_LINES[idx];
+          const enter = heroLine.animate(IN, { duration: 340, easing: "cubic-bezier(0,0,.2,1)" });
+          enter.onfinish = () => { heroLine.style.opacity = ""; };
+        };
+      }, 5000);
+    }
   }
 
   const nav = document.getElementById("nav");
