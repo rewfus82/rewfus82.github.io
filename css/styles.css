@@ -250,7 +250,11 @@ strong { color: var(--text); font-weight: 600; }
   font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
-  min-height: 1.15em; /* reduce reflow as rotating lines change length */
+  /* Reserve space for the tallest rotating line so swaps never reflow the page.
+     The line is vertically centered, so shorter lines just sit in the reserve. */
+  min-height: 3.6em;
+  display: flex;
+  align-items: center;
 }
 .hero__line {
   display: inline-block;
@@ -627,4 +631,7 @@ strong { color: var(--text); font-weight: 600; }
 
   .timeline__item { grid-template-columns: 1fr; gap: 0.4rem; }
   .section { padding: 72px 0; }
+
+  /* Lines wrap to more rows on narrow screens — reserve more so swaps don't shift. */
+  .hero__title { min-height: 6.5em; }
 }
