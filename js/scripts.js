@@ -86,7 +86,11 @@
         const out = heroLine.animate(OUT, { duration: 260, easing: "cubic-bezier(.4,0,1,1)" });
         out.onfinish = () => {
           heroLine.style.opacity = "0"; // hold hidden through the swap
-          idx = (idx + 1) % HERO_LINES.length;
+          let next = idx;
+          while (next === idx && HERO_LINES.length > 1) {
+            next = Math.floor(Math.random() * HERO_LINES.length); // random, no immediate repeat
+          }
+          idx = next;
           heroLine.innerHTML = HERO_LINES[idx];
           const enter = heroLine.animate(IN, { duration: 340, easing: "cubic-bezier(0,0,.2,1)" });
           enter.onfinish = () => { heroLine.style.opacity = ""; };
