@@ -6,7 +6,7 @@
     <title>Ryan McLaughlin — AI &amp; Software Engineer</title>
     <meta
       name="description"
-      content="Ryan McLaughlin — Software Engineer building production AI systems: multi-agent orchestration with LangGraph, custom MCP servers, and human-in-the-loop workflows."
+      content="Ryan McLaughlin — Software Engineer building production AI systems: multi-agent LangGraph orchestration, hybrid retrieval (RAG) with evaluation, multimodal LLM input, and custom MCP servers."
     />
     <meta name="author" content="Ryan McLaughlin" />
 
@@ -24,7 +24,7 @@
     <meta property="og:title" content="Ryan McLaughlin — AI &amp; Software Engineer" />
     <meta
       property="og:description"
-      content="Production AI engineering: multi-agent LangGraph systems, custom MCP servers, and human-in-the-loop workflows."
+      content="Production AI engineering: multi-agent LangGraph systems, hybrid retrieval (RAG) with evaluation, multimodal LLM input, and custom MCP servers."
     />
     <meta property="og:url" content="https://rewfus82.github.io/" />
     <meta property="og:image" content="https://rewfus82.github.io/assets/img/og.png" />
@@ -36,7 +36,7 @@
     <meta name="twitter:title" content="Ryan McLaughlin — AI &amp; Software Engineer" />
     <meta
       name="twitter:description"
-      content="Production AI engineering: multi-agent LangGraph systems, custom MCP servers, and human-in-the-loop workflows."
+      content="Production AI engineering: multi-agent LangGraph systems, hybrid retrieval (RAG) with evaluation, multimodal LLM input, and custom MCP servers."
     />
     <meta name="twitter:image" content="https://rewfus82.github.io/assets/img/og.png" />
 
@@ -106,16 +106,16 @@
         </p>
         <div class="hero__actions reveal">
           <a class="btn btn--primary" href="#projects">View projects</a>
-          <a class="btn btn--ghost" href="assets/resume/Ryan-McLaughlin-Resume.docx">Résumé</a>
+          <a class="btn btn--ghost" href="assets/resume/Ryan_McLaughlin_Resume.docx">Résumé</a>
           <a class="btn btn--ghost" href="#contact">Get in touch</a>
         </div>
         <ul class="hero__chips reveal" aria-label="Core technologies">
           <li>LangGraph</li>
+          <li>RAG</li>
           <li>MCP</li>
           <li>LangSmith</li>
           <li>FastAPI</li>
           <li>React</li>
-          <li>Spring Boot</li>
           <li>Kubernetes</li>
         </ul>
       </div>
@@ -179,11 +179,11 @@
             <h3>AI Engineering</h3>
             <ul>
               <li>LangGraph (multi-agent orchestration)</li>
-              <li>LangChain</li>
+              <li>LangChain · LangSmith tracing</li>
               <li>Model Context Protocol (custom MCP servers)</li>
-              <li>Human-in-the-loop workflow design</li>
-              <li>LangSmith — tracing &amp; observability</li>
-              <li>RAG &amp; structured LLM output</li>
+              <li>Hybrid retrieval / RAG — vector + keyword search, eval (recall@k, MRR)</li>
+              <li>Multimodal LLM input — vision &amp; in-browser speech</li>
+              <li>Human-in-the-loop &amp; structured LLM output</li>
             </ul>
           </article>
 
@@ -217,7 +217,7 @@
               <li>Kafka</li>
               <li>Kubernetes</li>
               <li>Docker</li>
-              <li>SQLite / PostgreSQL</li>
+              <li>SQLite / PostgreSQL · sqlite-vec (vector search)</li>
             </ul>
           </article>
 
@@ -252,22 +252,27 @@
               what production-grade agent orchestration actually looks like.
             </p>
             <p class="project__desc">
-              A LangGraph graph coordinates specialized agents to plan a full
-              week of macro-targeted meals, then pauses for a
+              A LangGraph graph coordinates specialized agents to plan a week of
+              macro-targeted meals, pausing for a
               <strong>human-in-the-loop review</strong> before anything is saved.
-              Custom <strong>MCP servers</strong> expose the user's pantry and
-              grocery state to the model; per-day generation runs in parallel
-              (7-day plans dropped from ~70s to ~33s). Every run is traced in
-              <strong>LangSmith</strong>. React + FastAPI front the whole thing,
-              with measured-TDEE analytics derived from real weight logs.
+              A <strong>hybrid retrieval layer</strong> (vector + keyword search,
+              fused and measured with a recall@k / MRR eval) powers a cited
+              <strong>Nutrition Coach</strong> and grounds the plans themselves in
+              real sports-nutrition research and recipes. Add pantry items by
+              typing, <strong>snapping a photo</strong> (LLM vision), or
+              <strong>speaking</strong> — Whisper transcribes in the browser, no key
+              and no upload. Custom <strong>MCP servers</strong>, parallel per-day
+              generation, and <strong>LangSmith</strong> tracing throughout;
+              bring-your-own-key for Claude or OpenAI.
             </p>
             <ul class="project__tags">
               <li>LangGraph</li>
+              <li>RAG · sqlite-vec</li>
               <li>MCP</li>
-              <li>LangSmith</li>
+              <li>Vision + Voice</li>
               <li>FastAPI</li>
               <li>React + TS</li>
-              <li>SQLite</li>
+              <li>LangSmith</li>
             </ul>
             <div class="project__links">
               <a class="btn btn--primary btn--sm" href="https://mise-en-place-rwdy.onrender.com" target="_blank" rel="noopener">
@@ -286,12 +291,13 @@
           <div class="project__highlights">
             <h4>Architecture highlights</h4>
             <ul>
-              <li><span>◆</span> Multi-agent LangGraph orchestration with a stateful checkpointed graph</li>
-              <li><span>◆</span> Custom MCP servers for pantry depletion &amp; grocery pricing</li>
-              <li><span>◆</span> Human-in-the-loop interrupt: review &amp; revise before commit</li>
-              <li><span>◆</span> Parallel per-day generation for ~2× faster plans</li>
-              <li><span>◆</span> LangSmith tracing wired in from day one</li>
-              <li><span>◆</span> 87 backend + 11 frontend tests</li>
+              <li><span>◆</span> Hybrid RAG — sqlite-vec (dense) + FTS5 BM25, fused with Reciprocal Rank Fusion — measured by a recall@k / MRR eval harness</li>
+              <li><span>◆</span> One retrieval engine powers the cited Coach, plan grounding, and recipe selection</li>
+              <li><span>◆</span> Multimodal pantry: photo via LLM vision, voice via Whisper running fully in-browser (free, key-free)</li>
+              <li><span>◆</span> Multi-agent LangGraph orchestration with a checkpointed graph + human-in-the-loop interrupt</li>
+              <li><span>◆</span> Custom MCP server for pantry &amp; grocery state; parallel per-day generation</li>
+              <li><span>◆</span> Local embeddings &amp; in-browser transcription — retrieval and voice need no API key</li>
+              <li><span>◆</span> 139 backend tests + an eval regression guard</li>
             </ul>
           </div>
         </article>
